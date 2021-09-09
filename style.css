@@ -13,16 +13,22 @@ body, html {
 	font-family: 'Urbanist', sans-serif;
 }
 
+.main-wrapper {
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+}
+
 .countdown-wrapper {
 	display: flex; 
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	color: #1c1b1c;
-}
-
-.countdown-wrapper h1 {
+	background-color: #f8f0e3aa;	
 	margin-top: 5rem;
+	width: 75%;
+	border-radius: 20px;
 }
 
 .elements{
@@ -30,16 +36,20 @@ body, html {
 	flex-direction: row;
 	align-items: center; 
 	justify-content: center;
+	margin-bottom: 1rem;
 }
 
 .c-element {
 	display: flex;
 	flex-direction: column;
 	margin: 1rem;
+	width: 5rem;
 	align-items: center;
 	font-size: 72px;
+	font-weight: 700;
 }
 
 .c-element span {
 	font-size: 24px;
+	font-weight: 400px;
 }
