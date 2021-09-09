@@ -25,5 +25,7 @@ todos include:
 	- UI: 
 
 	[ ] Fix the Background Image;
+
 	[ ] Add (option to?) blur background image;
+	
 	[ ] Add "New Countdown" button.
