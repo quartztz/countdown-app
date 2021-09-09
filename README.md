@@ -1,7 +1,7 @@
 # countdown-app
 Quick Project to familiarize with Vanilla js, HTML and CSS. Not sure this will go anywhere as-is, but I might use it as a template if it goes well enough.
 
-## implemented
+## IMPLEMENTED
 Already implemented features include: 
  - a functioning ui: shows the (correctly formatted) time between the current time and a user set date. Also works with multiple end dates and multiple timers.; 
  - a scuffed way to have a background image;
@@ -21,3 +21,9 @@ todos include:
 	[x] Implement dynamic HTML generation on the js end;
 	
 	[ ] Implement a button with an accompaning ui so the user can add new countdowns straight from the website.
+
+	- UI: 
+
+	[ ] Fix the Background Image;
+	[ ] Add (option to?) blur background image;
+	[ ] Add "New Countdown" button.
