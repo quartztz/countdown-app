@@ -65,12 +65,16 @@ function addCountdownToHTML(params) {
 let cds = [];
 
 cds.push(new Countdown({
-	title: "Days Until New Year!",
+	title: "New Year's",
 	endDate: new Date("1 Jan 2022"),
 }))
 cds.push(new Countdown({
-	title: "Days Until My Birthday!",
+	title: "Birthday",
 	endDate: new Date("18 Aug 2022"),
+}))
+cds.push(new Countdown({
+	title: "Christmas",
+	endDate: new Date("25 Dec 2021"),
 }))
 
 function updateAll() {
@@ -78,7 +82,5 @@ function updateAll() {
 		cd.update()
 	})
 }
-
-
 
 setInterval(updateAll, 1000)
