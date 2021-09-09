@@ -2,5 +2,13 @@
 
 * {
 	box-sizing: border-box;
-	font-family: 'Urbanist', sans-serif;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+	background-color: #1c1b1c;
+}
+
+h1 {
+	color: #cdcdcd;
 }
