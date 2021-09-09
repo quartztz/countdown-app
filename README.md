@@ -27,5 +27,3 @@ todos include:
 	[ ] Fix the Background Image;
 
 	[ ] Add (option to?) blur background image;
-	
-	[ ] Add "New Countdown" button.
