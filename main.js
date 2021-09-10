@@ -28,6 +28,10 @@ class Countdown {
 		this.HTML = addCountdownToHTML(params); 
 		this.over = false;
 
+		this.formatTime = function(time) {
+			return (time < 10) ? `0${time}` : time;
+		}
+
 		this.update = function() {
 			let current = new Date();
 			
@@ -59,7 +63,7 @@ class Countdown {
 				
 				for (const [key, value] of Object.entries(time)) {
 					let div = this.HTML.querySelector(`#d-${key}`);
-					div.innerHTML = `${value}\n<span>${key}</span>`;
+					div.innerHTML = `${this.formatTime(value)}\n<span>${key}</span>`;
 				}
 			}
 		}
