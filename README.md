@@ -3,7 +3,8 @@ Quick Project to familiarize with Vanilla js, HTML and CSS. Not sure this will g
 
 ## IMPLEMENTED
 Already implemented features include: 
- - a functioning ui: shows the (correctly formatted) time between the current time and a user set date. Also works with multiple end dates and multiple timers.; 
+ - a functioning ui: shows the (correctly formatted) time between the current time and a user set date. Also works with multiple end dates and multiple timers;
+ - ability to add new countdowns through a "plus" button at the top of the screen; when pressed, opens a popup where the user can add a title and an end date;
  - a scuffed way to have a background image;
 
 ## TODO
@@ -20,10 +21,16 @@ todos include:
 
 	[x] Implement dynamic HTML generation on the js end;
 	
-	[ ] Implement a button with an accompaning ui so the user can add new countdowns straight from the website.
+	[x] Implement a button with an accompaning ui so the user can add new countdowns straight from the website.
 
 	- UI: 
+
+	[x] Change display mode for expired countdowns (currently, a color change to a shade of red, and the replacement of the "D|H|M|S" display with a message and the original endDate);
 
 	[ ] Fix the Background Image;
 
 	[ ] Add (option to?) blur background image;
+
+	- Save Session: 
+
+	[ ] In the very far future: be able to save your configuration of preferred countdowns, and actually open those on startup. 
