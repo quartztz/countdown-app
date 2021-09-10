@@ -27,6 +27,8 @@ todos include:
 
 	[x] Change display mode for expired countdowns (currently, a color change to a shade of red, and the replacement of the "D|H|M|S" display with a message and the original endDate);
 
+	[/] More readable UI on mobile devices;
+
 	[ ] Fix the Background Image;
 
 	[ ] Add (option to?) blur background image;
