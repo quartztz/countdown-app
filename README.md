@@ -30,6 +30,8 @@ todos include:
 	and the replacement of the "D|H|M|S" display with a message and the original endDate);
 
 	[x] Make the button and the "new countdown" form look good;
+	
+	[ ] Animate the "new countdown" form popup;
 
 	[/] More readable UI on mobile devices;
 
