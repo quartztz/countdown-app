@@ -98,7 +98,7 @@ button {
 	display: block;
 	position: fixed;
 	box-shadow: 0px 0px 5px #919191;
-	background-color: #f18868;
+	background-color: #f18868ef;
 	right: 0;
 	bottom: 0;
 	margin-right: 4rem;
@@ -106,14 +106,14 @@ button {
 	border: none;
 	height: 100px;
 	width: 100px;
-	font-size: 20px;
+	font-size: 30px;
+	font-weight: bold;
 	border-radius: 50%;
 	z-index: 10;
 }
 
 button:hover {
 	cursor: pointer;
-
 }
 
 .form-wrapper {
@@ -186,7 +186,7 @@ input {
 }
 
 .grow {
-	transition: transform .2s ease-in-out;
+	transition: transform .325s ease-in-out;
 }
 
 .grow:hover {
