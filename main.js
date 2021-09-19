@@ -87,7 +87,7 @@ function addCountdownToHTML(params) {
 let cds = [];
 
 cds.push(new Countdown({
-	title: "Last Week",
+	title: "A While Ago",
 	endDate: new Date("05 Sept 2021"),
 }))
 cds.push(new Countdown({
@@ -110,46 +110,44 @@ function updateAll() {
 }
 
 function openForm() {
+	form = document.querySelector(".form-wrapper");
+	mw = document.querySelector(".main-wrapper");
 
-	// replaces the "+" button with a form to add a new Countdown. 
-	// at the end, the form's contents are passed as parameters for 
-	// a "createNewCountdown" call that actually creates a countdown.
-
-	let btn = document.querySelector("button");
-	let mw = document.querySelector(".main-wrapper");
-	let fw = document.createElement("div");
-	
-	fw.className = "form-wrapper";
-	fw.innerHTML = `<form>
-		<label>Title</label>
-		<input type="text" name="title"></input><br>
-		<label>Date</label>
-		<input type="date" name="date"></input><br>
-		<button onclick="createNewCountdown({title: this.form.title.value, endDate: this.form.date.value}); return false">Add countdown!</button>
-		</form>`
-	
-	btn = mw.replaceChild(fw, btn); 
+	mw.className += " blur";
+	form.className += " visible";
 }
 
-function createNewCountdown(params) {
+function createNewCountdown(create) {
 	
-	// creates a countdown with the params specified from the 
-	// form. also deletes the form and replaces it with a plus 
-	let mw = document.querySelector(".main-wrapper");
-	let fw = document.querySelector(".form-wrapper");
-	let btn = document.createElement("button");
+	// creates a countdown if "create" is set. 
+	// if it isn't, closes the form.
 
-	btn.onclick = "openForm()";
-	btn.innerText = "+";
+	if ( create ) {
 
-	fw = mw.replaceChild(btn, fw);
+		// finds the values in the form.
 
-	console.log(params);
+		let title = document.querySelector("#title").value;
+		let date = document.querySelector("#date").value;
+		console.log(title, date);
 
-	cds.push(new Countdown({
-		title: params.title,
-		endDate: params.endDate,
-	}));
+		// creates new countdown and pushes it into the 
+		// main array.
+
+		cds.push(new Countdown({
+			title: title,
+			endDate: date,
+		}));
+	}
+
+	// closes the form.
+
+	form = document.querySelector(".form-wrapper");
+	mw = document.querySelector(".main-wrapper");
+	
+	form.className = "form-wrapper";
+	mw.className = "main-wrapper";
+	console.log("closed");
+
 }
 
 setInterval(updateAll, 1000);

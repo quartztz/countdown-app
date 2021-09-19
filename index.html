@@ -9,8 +9,24 @@
 	<script src="./main.js" defer ></script>
 </head>
 <body>
-	<div class="main-wrapper">
-		<button onclick="openForm()">+</button>
+	<div class="big-wrapper">
+		<button onclick="openForm()" class="grow">+</button>
+		<div class="form-wrapper">
+			<span onclick="createNewCountdown(false)">x</span>
+			<div class="stuff">
+				<div>
+					<label>Countdown Name: </label> <input id="title" type="text">
+				</div>
+				<div>	
+					<label>Date: </label> <input id="date" type="date">
+				</div>
+				<div>
+					<input id="button" type="button" onclick="createNewCountdown(true)" value="Create!">
+				</div>
+				</div>
+			</div>
+		<div class="main-wrapper">
+		</div>
 	</div>
 </body>
 </html>

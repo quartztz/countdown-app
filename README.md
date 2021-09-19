@@ -4,7 +4,7 @@ Quick Project to familiarize with Vanilla js, HTML and CSS. Not sure this will g
 ### IMPLEMENTED
 Already implemented features include: 
  - a functioning ui: shows the (correctly formatted) time between the current time and a user set date. Also works with multiple end dates and multiple timers;
- - ability to add new countdowns through a "plus" button at the top of the screen; when pressed, opens a popup where the user can add a title and an end date;
+ - ability to add new countdowns through a "plus" button on screen; when pressed, opens a popup where the user can add a title and an end date;
  - a scuffed way to have a background image;
 
 ### TODO
@@ -26,6 +26,8 @@ todos include:
 	- UI: 
 
 	[x] Change display mode for expired countdowns (currently, a color change to a shade of red, and the replacement of the "D|H|M|S" display with a message and the original endDate);
+
+	[x] Make the button and the "new countdown" form look good;
 
 	[/] More readable UI on mobile devices;
 
