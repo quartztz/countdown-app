@@ -21,11 +21,13 @@ todos include:
 
 	[x] Implement dynamic HTML generation on the js end;
 	
-	[x] Implement a button with an accompaning ui so the user can add new countdowns straight from the website.
+	[x] Implement a button with an accompaning ui so the user can add new countdowns straight from 
+	the website.
 
 	- UI: 
 
-	[x] Change display mode for expired countdowns (currently, a color change to a shade of red, and the replacement of the "D|H|M|S" display with a message and the original endDate);
+	[x] Change display mode for expired countdowns (currently, a color change to a shade of red, 
+	and the replacement of the "D|H|M|S" display with a message and the original endDate);
 
 	[x] Make the button and the "new countdown" form look good;
 
@@ -37,4 +39,5 @@ todos include:
 
 	- Save Session: 
 
-	[ ] In the very far future: be able to save your configuration of preferred countdowns, and actually open those on startup. 
+	[ ] In the very far future: be able to save your configuration of preferred countdowns, and 
+	actually open those on startup. 
